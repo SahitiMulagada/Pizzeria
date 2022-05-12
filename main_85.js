@@ -15,6 +15,9 @@ function add_suggestion(){
     //Give the appropriate id name as add_item
 	var item = document.getElementById("add_item").value;
     //Use the push() function to push the item into menu_list_array
-    menu_list_array.push(item);
+    if(!menu_list_array.includes(item))
+        menu_list_array.push(item);
+    document.getElementById("add_item").value="";
+    getmenu();
 }
 
