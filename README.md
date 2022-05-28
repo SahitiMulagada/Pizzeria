@@ -1,2 +1,2 @@
 # Pizzeria
-By Sahiti Mulagaa
+By Sahiti Mulagada
