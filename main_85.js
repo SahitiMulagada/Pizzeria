@@ -2,12 +2,11 @@ menu_list_array = [ "Veg Margherita Pizza","Cheese Pizza","Non-veg Pizza","Tomat
 
 function getmenu()
 {
-    var htmldata="";
+    var htmldata="<p style='color:#f5c71a; font-size:18px;'>Total items: " + menu_list_array.length + "</p>";
     for(var i=0; i<menu_list_array.length; i++)
     {
-        htmldata=htmldata+ menu_list_array[i] + '<br>'
+        htmldata=htmldata + (i+1) + ". " + menu_list_array[i] + '<br>';
     }
-    //Give the appropriate id name as display_menu 
     document.getElementById("display_menu").innerHTML = htmldata;
 }
 
