@@ -118,3 +118,16 @@ body{
 	width:100px;
 	height: 80px;
 }
+
+@media screen and (max-width: 768px) {
+    .img_div, .menu_div {
+        float: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .topnav a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
