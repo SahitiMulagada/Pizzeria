@@ -57,9 +57,22 @@ body{
   }
   #menu_list{
 	background-color:#f5c71a;
-	color:black; 
+	color:black;
 	width: 200px;
 	border: none;
+  }
+
+  #menu_list:hover {
+    background-color: #e2062c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-success:hover {
+    background-color: #28a745;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
   }
 
   .newRow::after {
