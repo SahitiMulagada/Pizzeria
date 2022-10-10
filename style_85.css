@@ -132,6 +132,15 @@ body{
 	height: 80px;
 }
 
+.footer {
+    background-color: #333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    font-family: cursive;
+    margin-top: 30px;
+}
+
 @media screen and (max-width: 768px) {
     .img_div, .menu_div {
         float: none;
