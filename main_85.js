@@ -29,3 +29,17 @@ function remove_pizza(index) {
     getmenu();
 }
 
+function searchMenu() {
+    var query = document.getElementById("search_item").value.toLowerCase();
+    var htmldata = "";
+    var count = 0;
+    for(var i = 0; i < menu_list_array.length; i++) {
+        if(menu_list_array[i].toLowerCase().includes(query)) {
+            count++;
+            htmldata += count + ". " + menu_list_array[i] + ' <button onclick="remove_pizza(' + i + ')" style="background:#e2062c;color:white;border:none;padding:2px 8px;cursor:pointer;font-size:12px;">x</button><br>';
+        }
+    }
+    htmldata = "<p style='color:#f5c71a; font-size:18px;'>Found: " + count + " items</p>" + htmldata;
+    document.getElementById("display_menu").innerHTML = htmldata;
+}
+
